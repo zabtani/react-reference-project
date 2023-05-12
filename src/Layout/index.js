@@ -7,6 +7,7 @@ const Layout = () => {
     <div>
       {/* <Nav /> */}
       <Outlet />
+      hi
     </div>
   );
 };
