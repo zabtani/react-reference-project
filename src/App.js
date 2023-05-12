@@ -1,17 +1,15 @@
 import React from 'react';
 import './style.css';
+import Routes from './routes';
 import AppProvider from './store/AppProvider';
-import Count from './Count';
-import CountButton from './CountButton';
+import { BrowserRouter } from 'react-router-dom';
 
 export default function App() {
   return (
-    <div>
+    <BrowserRouter>
       <AppProvider>
-        <CountButton />
-        <Count />
-        <CountButton />
+        <Routes />
       </AppProvider>
-    </div>
+    </BrowserRouter>
   );
 }
