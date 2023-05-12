@@ -60,6 +60,7 @@ tr:nth-child(even) {
 }
 .main{
   th,td{
+    background-color: white;
     text-align:center;
   }
  

@@ -7,8 +7,8 @@ const Counter = () => {
   const { decrement, increment, count } = React.useContext(AppProviderContext);
   return (
     <div>
-      <CountButton onClick={increment} />
-      <CountButton onClick={decrement} />
+      <CountButton onClick={increment} text="increment" />
+      <CountButton onClick={decrement} text="decrement" />
       <Count value={count} />
     </div>
   );
