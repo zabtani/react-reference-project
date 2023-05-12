@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-
+import styled from 'styled-components';
 const Layout = () => {
   return (
     <Container>
@@ -16,8 +16,10 @@ export default Layout;
 const Container = styled.div`
 width:100%;
 display:flex;
+background:skyblue;
+
 `;
 
 const NavLink = styled(Link)`
-background:red;
+margin:20px;
 `;

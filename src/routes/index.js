@@ -3,6 +3,7 @@ import { useRoutes } from 'react-router-dom';
 import Counter from '../Counter';
 import Table from '../Table';
 import Layout from '../Layout';
+import Home from '../Home';
 
 const Routes = () => {
   const routes = [
@@ -11,15 +12,15 @@ const Routes = () => {
       element: <Layout />,
       children: [
         {
-          path: '*',
+          path: '',
+          element: <Home />,
+        },
+        {
+          path: 'counter',
           element: <Counter />,
         },
         {
-          path: '/counter',
-          element: <Counter />,
-        },
-        {
-          path: '/table',
+          path: 'table',
           element: <Table />,
         },
       ],
