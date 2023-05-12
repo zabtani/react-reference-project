@@ -1,7 +1,7 @@
 import React from 'react';
 import Count from './Count';
 import CountButton from './CountButton';
-import AppProviderContext from '../store/AppContext';
+import AppProviderContext from '../../store/AppContext';
 
 const Counter = () => {
   const { count, setCount } = React.useContext(AppProviderContext);

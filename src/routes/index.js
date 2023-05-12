@@ -1,9 +1,9 @@
 import React from 'react';
 import { useRoutes } from 'react-router-dom';
-import Counter from '../Counter';
-import Table from '../Table';
-import Layout from '../Layout';
-import Home from '../Home';
+import Counter from '../components/Counter';
+import Table from '../components/Table';
+import Layout from '../components/Layout';
+import Home from '../components/Home';
 
 const Routes = () => {
   const routes = [

@@ -1,5 +1,5 @@
 import React from 'react';
-import AppProviderContext from '../store/AppContext';
+import AppProviderContext from '../../store/AppContext';
 const Count = () => {
   const { count } = React.useContext(AppProviderContext);
 
