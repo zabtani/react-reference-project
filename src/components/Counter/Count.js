@@ -1,8 +1,9 @@
 import React from 'react';
 import AppProviderContext from '../../store/AppContext';
-const Count = () => {
-  const { count } = React.useContext(AppProviderContext);
 
-  return <div>Count is: {count}! </div>;
+const Count = () => {
+  const { currentCount } = React.useContext(AppProviderContext);
+
+  return <div>Count is: {currentCount}! </div>;
 };
 export default Count;
