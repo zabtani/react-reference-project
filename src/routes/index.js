@@ -1,23 +1,25 @@
+import React from 'react';
 import Counter from '../Counter';
 import Table from '../Table';
+import Layout from '../Layout';
 import { useRoutes } from 'react-router-dom';
 
 const Routes = () => {
   const routes = [
     {
       path: '/',
-      element: <App />,
+      element: <Layout />,
       children: [
         {
           path: '*',
           element: <Counter />,
         },
         {
-          path: '/counter',
+          path: 'counter',
           element: <Counter />,
         },
         {
-          path: '/table',
+          path: 'table',
           element: <Table />,
         },
       ],
