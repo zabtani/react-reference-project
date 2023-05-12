@@ -25,7 +25,6 @@ const Table = () => {
           <th>time</th>
           <th>value</th>
         </tr>
-
         {count.map(({ day, time, value }) => (
           <tr>
             <td>{day}</td>
