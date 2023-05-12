@@ -2,7 +2,9 @@ import React from 'react';
 
 const AppContext = React.createContext({
   count: 0,
-  setCount: () => {},
+  history: [],
+  increment: () => {},
+  decrement: () => {},
 });
 
 export default AppContext;

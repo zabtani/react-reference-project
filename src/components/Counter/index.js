@@ -4,11 +4,11 @@ import CountButton from './CountButton';
 import AppProviderContext from '../../store/AppContext';
 
 const Counter = () => {
-  const { count, setCount } = React.useContext(AppProviderContext);
+  const { decrement, increment, count } = React.useContext(AppProviderContext);
   return (
     <div>
-      <CountButton onClick={() => setCount((prev) => prev + 1)} />
-      <CountButton onClick={() => setCount((prev) => prev - 1)} />
+      <CountButton onClick={increment} />
+      <CountButton onClick={decrement} />
       <Count value={count} />
     </div>
   );
