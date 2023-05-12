@@ -10,10 +10,10 @@ const Routes = () => {
       path: '/',
       element: <Layout />,
       children: [
-        // {
-        //   path: '*',
-        //   element: <Counter />,
-        // },
+        {
+          path: '*',
+          element: <Counter />,
+        },
         {
           path: '/counter',
           element: <Counter />,
