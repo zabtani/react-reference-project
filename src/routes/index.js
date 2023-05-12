@@ -11,6 +11,10 @@ const Routes = () => {
       element: <Layout />,
       children: [
         {
+          path: '*',
+          element: <Counter />,
+        },
+        {
           path: '/counter',
           element: <Counter />,
         },
