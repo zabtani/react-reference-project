@@ -4,6 +4,7 @@ import Counter from '../components/Counter';
 import Table from '../components/Table';
 import Layout from '../components/Layout';
 import Home from '../components/Home';
+import Swapi from '../components/Swapi';
 
 const Routes = () => {
   const routes = [
@@ -22,6 +23,10 @@ const Routes = () => {
         {
           path: 'table',
           element: <Table />,
+        },
+        {
+          path: 'swapi',
+          element: <Swapi />,
         },
       ],
     },
